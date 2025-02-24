@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POOConcepts", "POOConcepts\POOConcepts.csproj", "{7DEE0F65-0BF2-41F5-A5AA-F164A5F87213}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taller1POO", "Taller1POO\Taller1POO.csproj", "{23F48D91-55CF-4812-B7A5-5687D5A77B7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7DEE0F65-0BF2-41F5-A5AA-F164A5F87213}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DEE0F65-0BF2-41F5-A5AA-F164A5F87213}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DEE0F65-0BF2-41F5-A5AA-F164A5F87213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23F48D91-55CF-4812-B7A5-5687D5A77B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F48D91-55CF-4812-B7A5-5687D5A77B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F48D91-55CF-4812-B7A5-5687D5A77B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F48D91-55CF-4812-B7A5-5687D5A77B7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
