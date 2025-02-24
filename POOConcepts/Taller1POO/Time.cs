@@ -8,10 +8,10 @@ class Time
     private int _milliseconds;
     public  Time()
     {
-        _hour = 0;
-        _minute = 0;
-        _seconds = 0;
-        _milliseconds = 0;
+       // _hour = 0;
+       // _minute = 0;
+       // _seconds = 0;
+       // _milliseconds = 0;
     }
 
     public Time (int hour) { _hour = ValidateHour(hour); _minute = 0; _seconds = 0; _milliseconds = 0; }
@@ -63,7 +63,24 @@ class Time
         return _hour * 60 + _minute;
     }
 
+    // Método IsOtherDay
+    public bool IsOtherDay(Time other)
+    {
+        long totalMilliseconds = this.ToMilliseconds() + other.ToMilliseconds();
+        return totalMilliseconds >= 86400000; // 86400000 ms = 24 horas
+    }
 
+    // Método Add
+    public Time Add(Time other)
+    {
+        long totalMilliseconds = this.ToMilliseconds() + other.ToMilliseconds();
+        long hours = (totalMilliseconds / 3600000) % 24;
+        long minutes = (totalMilliseconds % 3600000) / 60000;
+        long seconds = (totalMilliseconds % 60000) / 1000;
+        long milliseconds = totalMilliseconds % 1000;
+
+        return new Time((int)hours, (int)minutes, (int)seconds, (int)milliseconds);
+    }
 
 
 
