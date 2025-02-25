@@ -18,7 +18,12 @@ try
         Console.WriteLine($"\tMinutes     : {time.ToMinutes(),15:N0}");
         Console.WriteLine($"\tAdd         : {time.Add(t3),15:N0}");
         Console.WriteLine($"\tIs Other Day : {time.IsOtherDay(t4)}");
+
+        Console.WriteLine();
+
+        
     }
+    Time t6 = new(45, -7, 98, -87);
 }
 catch (Exception ex)
 {

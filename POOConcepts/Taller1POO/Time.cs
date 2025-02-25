@@ -82,8 +82,4 @@ class Time
         return new Time((int)hours, (int)minutes, (int)seconds, (int)milliseconds);
     }
 
-
-
-}
-
 }
