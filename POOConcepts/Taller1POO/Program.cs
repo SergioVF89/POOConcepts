@@ -23,10 +23,10 @@ try
 
         
     }
-    Time t6 = new(45, -7, 98, -87);
+    var t6 = new Time(45, -7, 98, -87);
 }
 catch (Exception ex)
 {
 
-    Console.WriteLine(ex);
+    Console.WriteLine(ex.Message);
 }
