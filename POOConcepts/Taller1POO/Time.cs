@@ -6,13 +6,7 @@ class Time
     private int _minute;
     private int _seconds;
     private int _milliseconds;
-    public  Time()
-    {
-       // _hour = 0;
-       // _minute = 0;
-       // _seconds = 0;
-       // _milliseconds = 0;
-    }
+    public  Time() {}
 
     public Time (int hour) { _hour = ValidateHour(hour); _minute = 0; _seconds = 0; _milliseconds = 0; }
     public Time(int hour, int minute) { _hour = ValidateHour(hour); _minute = ValidateMinute(minute); _seconds = 0; _milliseconds = 0; }
