@@ -4,14 +4,14 @@ class Time
 {
     private int _hour;
     private int _minute;
-    private int _seconds;
-    private int _milliseconds;
+    private int _second;
+    private int _millisecond;
     public  Time() {}
 
-    public Time (int hour) { _hour = ValidateHour(hour); _minute = 0; _seconds = 0; _milliseconds = 0; }
-    public Time(int hour, int minute) { _hour = ValidateHour(hour); _minute = ValidateMinute(minute); _seconds = 0; _milliseconds = 0; }
-    public Time(int hour, int minute, int seconds) { _hour = ValidateHour(hour); _minute = ValidateMinute(minute); _seconds = ValidateSeconds(seconds); _milliseconds = 0; }
-    public Time(int hour, int minute, int seconds, int milliseconds) { _hour = ValidateHour(hour); _minute = ValidateMinute(minute); _seconds = ValidateSeconds(seconds); _milliseconds = ValidateMilliseconds(milliseconds); }
+    public Time (int hour) { _hour = ValidateHour(hour); _minute = 0; _second = 0; _millisecond = 0; }
+    public Time(int hour, int minute) { _hour = ValidateHour(hour); _minute = ValidateMinute(minute); _second = 0; _millisecond = 0; }
+    public Time(int hour, int minute, int seconds) { _hour = ValidateHour(hour); _minute = ValidateMinute(minute); _second = ValidateSeconds(seconds); _millisecond = 0; }
+    public Time(int hour, int minute, int seconds, int milliseconds) { _hour = ValidateHour(hour); _minute = ValidateMinute(minute); _second = ValidateSeconds(seconds); _millisecond = ValidateMilliseconds(milliseconds); }
 
     public int Hour
     {
@@ -19,14 +19,14 @@ class Time
         set => _hour = value;
     }
     public int Minute { get => _minute; set => _minute = value; }
-    public int Seconds { get => _seconds; set => _seconds = value; }
-    public int Milliseconds { get => _milliseconds; set => _milliseconds = value; }
+    public int Second { get => _second; set => _second = value; }
+    public int Millisecond { get => _millisecond; set => _millisecond = value; }
 
     // public override string ToString() => $"{_hour:00}:{_minute:00}:{_seconds:00}.{_milliseconds:000}";
 
     public override string ToString()
     {
-        DateTime time = new DateTime(1, 1, 1, _hour, _minute, _seconds, _milliseconds);
+        DateTime time = new DateTime(1, 1, 1, _hour, _minute, _second, _millisecond);
         return time.ToString("hh:mm:ss.fff tt");
     }
 
@@ -44,12 +44,12 @@ class Time
 
     public int ToMilliseconds()
     {
-        return _hour * 3600000 + _minute * 60000 + _seconds * 1000 + _milliseconds;
+        return _hour * 3600000 + _minute * 60000 + _second * 1000 + _millisecond;
     }
 
     public int ToSeconds()
     {
-        return _hour * 3600 + _minute * 60 + _seconds;
+        return _hour * 3600 + _minute * 60 + _second;
     }
 
     public int ToMinutes()
