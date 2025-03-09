@@ -30,7 +30,16 @@ namespace Taller2POO
         }
 
 
-       
+        public override double GetPerimeter()
+        {
+            return 2 * (A + B);
+        }
+
+        public override double GetArea()
+        {
+            return A * B;
+        }
+
 
 
     }
