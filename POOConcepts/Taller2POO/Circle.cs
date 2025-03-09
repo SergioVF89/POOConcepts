@@ -1,6 +1,6 @@
 ﻿namespace Taller2POO;
 
-class Circle : Geometricfigure
+public class Circle : Geometricfigure
 {
     public Circle(string v, double r) : base(v)
     {
