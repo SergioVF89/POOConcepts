@@ -1,6 +1,12 @@
-﻿namespace Taller2POO
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Taller2POO
 {
-    public class Kite: Rhombus
+    public class Rectangle : Square
     {
         private double _b;
 
@@ -9,7 +15,6 @@
             get => _b;
             set => _b = ValidateB(value);
         }
-
         private double ValidateB(double value)
         {
             if (value <= 0)
@@ -19,21 +24,14 @@
             return value;
         }
 
-        public Kite(string v, double a, int d1, int d2, int b) : base(v, a, d1, d2)
+        public Rectangle(string v, double a, double b) : base(v,a)
         {
             B = b;
         }
 
-        public override double GetArea()
-        {
-            return (D1 * D2) / 2;
-        }
-
-        public override double GetPerimeter()
-        {
-            return 2 * (A + B);
-        }
 
        
+
+
     }
 }
