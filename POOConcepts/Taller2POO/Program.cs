@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using Taller2POO;
 
-//var circle = new Circle(nameof(Circle), 5);
+var circle = new Circle(nameof(Circle), 5);
 var square = new Square(nameof(Square), 10);
 //var rhombus = new Rhombus(nameof(Rhombus), 5, 7, 10);
 //var kite = new Kite(nameof(Kite), 7, 6, 5, 8);
@@ -13,8 +13,8 @@ var square = new Square(nameof(Square), 10);
 //var figures = new List<Geometricfigure>() { circle, square, rhombus, kite, rectangle, parallelogram, triangle, trapeze };
 //foreach (var figure in figures)
 //{
-   // Console.WriteLine(figure);
+// Console.WriteLine(figure);
 //}
-
+Console.WriteLine(circle);
 
 Console.WriteLine(square);
