@@ -59,5 +59,12 @@
       <FileName>Triangle.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Taller2POO.Trapeze">
+    <Position X="1.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAACAAAAAAAAAAAAAAAAAAAEAAAAAFAAAAAA=</HashCode>
+      <FileName>Trapeze.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
