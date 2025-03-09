@@ -4,7 +4,7 @@ using Taller2POO;
 var circle = new Circle(nameof(Circle), 5);
 var square = new Square(nameof(Square), 10);
 var rhombus = new Rhombus(nameof(Rhombus), 5, 7, 10);
-//var kite = new Kite(nameof(Kite), 7, 6, 5, 8);
+var kite = new Kite(nameof(Kite), 7, 6, 5, 8);
 //var rectangle = new Rectangle(nameof(Rectangle), 11.668, 67.790);
 //var parallelogram = new Parallelogram(nameof(Parallelogram), 141.65, 541.67, 23.89);
 //var triangle = new Triangle(nameof(Triangle), 45.56, 12.34, 27.09, 15);
@@ -19,3 +19,4 @@ Console.WriteLine(circle);
 
 Console.WriteLine(square);
 Console.WriteLine(rhombus);
+Console.WriteLine(kite);
