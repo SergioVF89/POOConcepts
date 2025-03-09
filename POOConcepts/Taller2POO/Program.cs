@@ -8,8 +8,8 @@ var rhombus = new Rhombus(nameof(Rhombus), 5, 7, 10);
 var kite = new Kite(nameof(Kite), 7, 6, 5, 8);
 var rectangle = new Rectangle(nameof(Rectangle), 4.568, 67.790);
 var parallelogram = new Parallelogram(nameof(Parallelogram), 14.65, 54.67, 23.09);
-//var triangle = new Triangle(nameof(Triangle), 45.56, 12.34, 27.09, 15);
-//var trapeze = new Trapeze(nameof(Trapeze), 18, 20, 30, 40, 20);
+var triangle = new Triangle(nameof(Triangle), 45.56, 12.34, 27.09, 15);
+//var trapeze = new Trapeze(nameof(Trapeze), 10, 20, 30, 40, 20);
 
 //var figures = new List<Geometricfigure>() { circle, square, rhombus, kite, rectangle, parallelogram, triangle, trapeze };
 //foreach (var figure in figures)
@@ -23,3 +23,4 @@ Console.WriteLine(rhombus);
 Console.WriteLine(kite);
 Console.WriteLine(rectangle);
 Console.WriteLine(parallelogram);
+Console.WriteLine(triangle);
