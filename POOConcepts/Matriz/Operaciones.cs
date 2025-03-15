@@ -10,13 +10,14 @@ namespace Matriz
     public class Operaciones
     {
         private int[,] matriz;
-        private int N;
+        private int _N;
+
         public Operaciones(int size)
         {
-            
 
-            N = ValidateSize(size);
-            matriz = new int[N, N];
+
+            _N = ValidateSize(size);
+            matriz = new int[_N, _N];
             LlenarMatriz();
         }
 
@@ -34,9 +35,9 @@ namespace Matriz
 
         private void LlenarMatriz()
         {
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < _N; i++)
             {
-                for (int j = 0; j < N; j++)
+                for (int j = 0; j < _N; j++)
                 {
                     matriz[i, j] = (i + 1) - j;
                 }
@@ -46,9 +47,9 @@ namespace Matriz
 
         public void MostrarMatriz()
         {
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < _N; i++)
             {
-                for (int j = 0; j < N; j++)
+                for (int j = 0; j < _N; j++)
                 {
                     Console.Write(matriz[i, j] + "\t");
                 }
@@ -59,9 +60,9 @@ namespace Matriz
         public int CalcularSumatoria()
         {
             int sumatoria = 0;
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < _N; i++)
             {
-                for (int j = 0; j < N; j++)
+                for (int j = 0; j < _N; j++)
                 {
                     sumatoria += matriz[i, j];
                 }
@@ -72,9 +73,9 @@ namespace Matriz
         public int EncontrarMayor()
         {
             int mayor = matriz[0, 0];
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < _N; i++)
             {
-                for (int j = 0; j < N; j++)
+                for (int j = 0; j < _N; j++)
                 {
                     if (matriz[i, j] > mayor)
                     {
@@ -88,9 +89,9 @@ namespace Matriz
         public int EncontrarMenor()
         {
             int menor = matriz[0, 0];
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < _N; i++)
             {
-                for (int j = 0; j < N; j++)
+                for (int j = 0; j < _N; j++)
                 {
                     if (matriz[i, j] < menor)
                     {
